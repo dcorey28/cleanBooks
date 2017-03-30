@@ -1,0 +1,40 @@
+body {
+	background: url(../images/books.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.container {
+	margin: 0 auto;
+	min-height: 100%;
+	max-width: 90%;
+	text-align: center;
+}
+
+#welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#welcome button {
+	font-size: 2em;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 10px;
+	background-color: #3399ff;
+}
+
+#welcome button:hover {
+	background-color: #3366cc;
+}
+
+#welcome button:active {
+	background-color: #333399;
+}
+
+button:hover {
+	cursor: pointer;
+}

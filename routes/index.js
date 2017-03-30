@@ -6,8 +6,12 @@ router.get('/', function(req, res, next) {
   res.sendfile('index.html');
 });
 
+router.get('/find', function(req, res, next) {
+	res.sendfile('find.html');
+});
+
 router.get('/books/:name', function (req, res, next) {
-	res.send('You are looking for the book' + req.params.name);
+	res.render('book', {book: req.params.name});
 });
 
 module.exports = router;
