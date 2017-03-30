@@ -1,0 +1,66 @@
+<html>
+
+<head>
+	<title>Clean Books</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="javascripts/rate.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+</head>
+
+<body>
+<a href="/"><button>back</button></a>
+	<form id="ratingForm" action="">
+	<!--fieldset>
+		<legend>Book Info</legend-->
+	<label for="title">Title: </label><input class="input" type="text" id="title"><br>
+	<label for="author">Author: </label><input class="input" type="text" id="author"><br>
+	<label for="cover">Book Cover (URL): </label><input class="input" type="text" id="cover"><br>
+
+	<div id=desContainer>
+	<label for="description">Description: </label>
+	<textarea class="input" type="text" id="description" rows="6" cols="50">A brief description of the books plot and characters.</textarea><br>
+	</div>
+
+	<fieldset>
+		<legend>Content Rating</legend>
+		<table>
+		<tr><th>Category:</th><th>G</th><th>PG</th><th>PG-13</th><th>R</th><th>NR-17</th></tr>
+			<tr>
+			<th>Violence</th>
+			<td><input type="radio" value="1" name="violence"></td>
+			<td><input type="radio" value="2" name="violence"></td>
+			<td><input type="radio" value="3" name="violence"></td>
+			<td><input type="radio" value="4" name="violence"></td>
+			<td><input type="radio" value="5" name="violence"></td>
+		</tr>
+		<tr>
+			<th>Crude Language and Profanity</th>
+			<td><input type="radio" value="1" name="language"></td>
+			<td><input type="radio" value="2" name="language"></td>
+			<td><input type="radio" value="3" name="language"></td>
+			<td><input type="radio" value="4" name="language"></td>
+			<td><input type="radio" value="5" name="language"></td>
+		<tr>
+		<tr>
+			<th>Nudity and Sexuality</th>
+			<td><input type="radio" value="1" name="sexual"></td>
+			<td><input type="radio" value="2" name="sexual"></td>
+			<td><input type="radio" value="3" name="sexual"></td>
+			<td><input type="radio" value="4" name="sexual"></td>
+			<td><input type="radio" value="5" name="sexual"></td>
+		</tr>
+		<tr>
+			<th>Drugs and Crime</th>
+			<td><input type="radio" value="1" name="substance"></td>
+			<td><input type="radio" value="2" name="substance"></td>
+			<td><input type="radio" value="3" name="substance"></td>
+			<td><input type="radio" value="4" name="substance"></td>
+			<td><input type="radio" value="5" name="substance"></td>
+		</tr>
+	</table>
+	</fieldset>
+		<button class="button" id="postRating">Submit</button>
+	<!--/fieldset-->
+</body>
+
+</html>

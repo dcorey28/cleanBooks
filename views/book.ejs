@@ -1,7 +1,17 @@
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
 </head>
 <body>
-<h2>The book you are looking for is <%=book%></h2>
+<h2><%=book.title%></h2>
+<img src="<%=book.cover%>">
+<p><strong>Description: </strong> <%=book.description%></p>
+<table>
+<tr><th>Violence:</th><td><%=book.rating.violence%></td></tr>
+<tr><th>Language: and Profanity:</th><td><%=book.rating.language%></td></tr>
+<tr><th>Crimes and Drugs:</th><td><%=book.rating.substance%></td></tr>
+<tr><th>Nudity and Sexuality:</th><td><%=book.rating.sexual%></td></tr>
+</table>
+<a href="/"><button>back</button></a>
 </body>
 </html>

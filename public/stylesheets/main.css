@@ -17,8 +17,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#welcome button {
-	font-size: 2em;
+button {
+	font-size: 1em;
 	color: white;
 	border: none;
 	border-radius: 8px;
@@ -27,14 +27,81 @@ body {
 	background-color: #3399ff;
 }
 
-#welcome button:hover {
+#welcome button {
+	font-size: 2em;
+}
+
+button:hover {
 	background-color: #3366cc;
 }
 
-#welcome button:active {
+button:active {
 	background-color: #333399;
 }
 
 button:hover {
 	cursor: pointer;
 }
+
+.input {
+	padding: 5px;
+	border-radius: 4px;
+	margin: 8px 3px;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(odd) {
+	background-color: #eeeeee;
+}
+
+form {
+	max-width: 50%;
+	margin: 20px;
+}
+
+form button {
+	padding: 4px;
+	margin: 10px auto;
+	font-size: 1em;
+	border-radius: 6px;
+}
+
+fieldset {
+	border-color: #cccccc;
+	margin: 20px 4px;
+}
+
+#desContainer * {
+	vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+#listings {
+    text-align: center;
+}
+
+#listings img {
+    max-width: 200px;
+}
+
